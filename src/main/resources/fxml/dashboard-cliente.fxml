@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cafeuniv.ppi.controller.DashboardClienteController">
+    <top>
+        <HBox spacing="16" alignment="CENTER_LEFT">
+            <padding><Insets top="12" right="12" bottom="12" left="12"/></padding>
+
+            <!-- Logo JazzCoffee en barra superior -->
+            <ImageView fitHeight="36" preserveRatio="true" smooth="true">
+                <image>
+                    <Image url="file:/C:/Users/esteb/Desktop/trabajos2semestre/PPI/DOCUMENTACION%20PPI/LOGO%20.jpg" />
+                </image>
+            </ImageView>
+
+            <Label text="JazzCoffee - Cliente" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+            <Region HBox.hgrow="ALWAYS" />
+            <Label fx:id="nombreClienteLabel" style="-fx-font-size: 14px;"/>
+            <Button text="Cerrar Sesión" onAction="#onCerrarSesion" />
+        </HBox>
+    </top>
+    <center>
+        <VBox spacing="16" alignment="TOP_LEFT">
+            <padding><Insets top="24" right="24" bottom="24" left="24"/></padding>
+            <Label text="Bienvenido a JazzCoffee" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+            <Label text="Arma tu pedido y recibe una ficho válido por 1 hora." style="-fx-font-size: 14px;"/>
+            <Separator />
+            <SplitPane dividerPositions="0.6">
+                <VBox spacing="8">
+                    <Label text="Productos disponibles" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                    <!-- Barra de búsqueda inline para filtrar productos por nombre -->
+                    <HBox spacing="8" alignment="CENTER_LEFT">
+                        <Label text="Buscar:"/>
+                        <TextField fx:id="buscarProductoField" promptText="Escribe parte del nombre..." />
+                    </HBox>
+                    <HBox spacing="12" alignment="CENTER_LEFT">
+                        <TableView fx:id="productosTable" prefHeight="360">
+                        <columns>
+                            <TableColumn fx:id="prodNombreCol" text="Producto" prefWidth="160"/>
+                            <TableColumn fx:id="prodCategoriaCol" text="Categoría" prefWidth="120"/>
+                            <TableColumn fx:id="prodPrecioCol" text="Precio" prefWidth="90"/>
+                            <TableColumn fx:id="prodStockCol" text="Stock" prefWidth="80"/>
+                            <TableColumn fx:id="prodAccionCol" text="" prefWidth="110"/>
+                        </columns>
+                        </TableView>
+                        <VBox spacing="6" alignment="TOP_CENTER">
+                            <Label text="Vista" style="-fx-font-size: 12px; -fx-font-weight: bold;"/>
+                            <ImageView fx:id="productImageView" fitWidth="180" fitHeight="180" preserveRatio="true" />
+                            <Label fx:id="productImagePlaceholder" text="(sin imagen)" style="-fx-font-size: 11px; -fx-text-fill: #666;" />
+                        </VBox>
+                    </HBox>
+                </VBox>
+                <VBox spacing="8">
+                    <Label text="Tu carrito" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                    <TableView fx:id="carritoTable" prefHeight="320">
+                        <columns>
+                            <TableColumn fx:id="carritoNombreCol" text="Producto" prefWidth="160"/>
+                            <TableColumn fx:id="carritoCantidadCol" text="Cantidad" prefWidth="80"/>
+                            <TableColumn fx:id="carritoPrecioCol" text="Precio" prefWidth="90"/>
+                            <TableColumn fx:id="carritoSubtotalCol" text="Subtotal" prefWidth="100"/>
+                            <TableColumn fx:id="carritoAccionCol" text="" prefWidth="90"/>
+                        </columns>
+                    </TableView>
+                    <HBox spacing="12" alignment="CENTER_LEFT">
+                        <Label text="Total:" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                        <Label fx:id="totalLabel" style="-fx-font-size: 16px;"/>
+                    </HBox>
+                    <Label fx:id="mensajeLabel" textFill="red" wrapText="true"/>
+                    <Button text="Generar ficha" onAction="#onGenerarFicho" prefWidth="200"/>
+                    <Label fx:id="fichoLabel" style="-fx-font-size: 13px; -fx-text-fill: #2e7d32;" wrapText="true"/>
+                </VBox>
+            </SplitPane>
+        </VBox>
+    </center>
+</BorderPane>
+

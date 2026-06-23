@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cafeuniv.ppi.controller.RegistroClienteController">
+    <center>
+        <VBox alignment="CENTER" spacing="12.0">
+            <padding>
+                <Insets top="24" right="24" bottom="24" left="24" />
+            </padding>
+            <Label text="JazzCoffee" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+            <Label text="Crear cuenta de cliente" style="-fx-font-size: 14px;" />
+            <TextField fx:id="nombreField" promptText="Nombre completo" prefWidth="280" />
+            <TextField fx:id="emailField" promptText="Email" prefWidth="280" />
+            <PasswordField fx:id="passwordField" promptText="Contraseña" prefWidth="280" />
+            <PasswordField fx:id="confirmField" promptText="Confirmar contraseña" prefWidth="280" />
+            <Button text="Crear cuenta" onAction="#onCrearCuenta" prefWidth="280" />
+            <Button text="Ya tengo cuenta" onAction="#onVolverLogin" style="-fx-background-color: transparent;" />
+            <Label fx:id="mensajeLabel" textFill="red" wrapText="true" prefWidth="280" />
+        </VBox>
+    </center>
+</BorderPane>

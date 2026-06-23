@@ -1,0 +1,3 @@
+ALTER TABLE ventas ADD COLUMN IF NOT EXISTS ref_pago VARCHAR(64);
+
+

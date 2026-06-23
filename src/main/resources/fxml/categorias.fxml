@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cafeuniv.ppi.controller.CategoriasController">
+    <top>
+        <HBox spacing="12" alignment="CENTER_LEFT">
+            <padding><Insets top="8" right="8" bottom="8" left="8"/></padding>
+            <Label text="Categorías" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+            <TextField fx:id="nombreField" promptText="Nombre" />
+            <Button text="Guardar" onAction="#onGuardar" />
+        </HBox>
+    </top>
+    <center>
+        <TableView fx:id="tabla" prefHeight="400">
+            <columns>
+                <TableColumn text="ID" prefWidth="60" />
+                <TableColumn text="Nombre" prefWidth="240" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox spacing="8" alignment="CENTER_LEFT">
+            <padding><Insets top="8" right="8" bottom="8" left="8"/></padding>
+            <Button text="Eliminar" onAction="#onEliminar" />
+        </HBox>
+    </bottom>
+</BorderPane>
+
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cafeuniv.ppi.controller.MovimientosController">
+    <top>
+        <HBox spacing="8" alignment="CENTER_LEFT">
+            <padding><Insets top="8" right="8" bottom="8" left="8"/></padding>
+            <ComboBox fx:id="productoCombo" promptText="Producto" />
+            <ComboBox fx:id="tipoCombo" promptText="Tipo" />
+            <TextField fx:id="cantidadField" promptText="Cantidad" />
+            <TextField fx:id="motivoField" promptText="Motivo" />
+            <Button text="Registrar" onAction="#onRegistrar" />
+        </HBox>
+    </top>
+    <center>
+        <TableView fx:id="tabla" prefHeight="400">
+            <columns>
+                <TableColumn text="Fecha" prefWidth="140" />
+                <TableColumn text="Producto" prefWidth="180" />
+                <TableColumn text="Tipo" prefWidth="100" />
+                <TableColumn text="Cantidad" prefWidth="100" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>
+
+

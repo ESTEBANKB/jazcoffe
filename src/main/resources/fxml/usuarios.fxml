@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cafeuniv.ppi.controller.UsuariosController">
+  <top>
+    <ToolBar>
+      <Button text="Nuevo" onAction="#onNuevo"/>
+      <Button text="Guardar" onAction="#onGuardar"/>
+      <Button text="Eliminar" onAction="#onEliminar"/>
+      <Separator/>
+      <Button text="Cambiar Rol" onAction="#onCambiarRol"/>
+      <Button text="Resetear Contraseña" onAction="#onResetPass"/>
+      <Separator/>
+      <Button text="Gestionar Permisos" onAction="#onGestionarPermisos"/>
+      <Button text="Ver Permisos" onAction="#onVerPermisos"/>
+    </ToolBar>
+  </top>
+  <center>
+    <TableView fx:id="tabla"/>
+  </center>
+  <bottom>
+    <GridPane hgap="8" vgap="6">
+      <padding>
+        <Insets top="10" right="10" bottom="10" left="10"/>
+      </padding>
+      <columnConstraints>
+        <ColumnConstraints percentWidth="20"/>
+        <ColumnConstraints percentWidth="80"/>
+      </columnConstraints>
+      <children>
+        <Label text="Nombre" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="nombreField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+        <Label text="Email" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <TextField fx:id="emailField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        <Label text="Rol" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <ComboBox fx:id="rolCombo" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        <Label text="Activo" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <CheckBox fx:id="activoCheck" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+      </children>
+    </GridPane>
+  </bottom>
+</BorderPane>
+
+

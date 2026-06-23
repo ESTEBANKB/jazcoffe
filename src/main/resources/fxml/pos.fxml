@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cafeuniv.ppi.controller.PosController">
+    <top>
+        <VBox spacing="6">
+            <padding><Insets top="8" right="8" bottom="8" left="8"/></padding>
+            <!-- Barra de búsqueda para productos (admin/cajero) -->
+            <HBox spacing="8" alignment="CENTER_LEFT">
+                <Label text="Buscar producto:" />
+                <TextField fx:id="buscarProductoField" promptText="Escribe parte del nombre..." />
+            </HBox>
+            <HBox spacing="8" alignment="CENTER_LEFT">
+                <ComboBox fx:id="productoCombo" promptText="Producto" />
+                <TextField fx:id="cantidadField" promptText="Cantidad" />
+                <Button text="Agregar" onAction="#onAgregar" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Label text="Descuento:" />
+                <TextField fx:id="descuentoField" promptText="0" prefWidth="80" />
+                <Label text="Pago:" />
+                <ComboBox fx:id="metodoPagoCombo" />
+                <Button text="Confirmar venta" onAction="#onConfirmar" />
+            </HBox>
+            <HBox spacing="8" alignment="CENTER_LEFT">
+                <Label text="Ficho cliente:" />
+                <TextField fx:id="fichoField" promptText="0001" prefWidth="120" />
+                <Button text="Cargar ficho" onAction="#onCargarFicho" />
+                <Label fx:id="fichoInfoLabel" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Label fx:id="notificacionFichosLabel" style="-fx-background-color: #ff9800; -fx-text-fill: white; -fx-padding: 4 8 4 8; -fx-background-radius: 4;" />
+            </HBox>
+        </VBox>
+    </top>
+    <center>
+        <TableView fx:id="carritoTable" prefHeight="400">
+            <columns>
+                <TableColumn text="Producto" prefWidth="220" />
+                <TableColumn text="Cantidad" prefWidth="90" />
+                <TableColumn text="Precio" prefWidth="90" />
+                <TableColumn text="Subtotal" prefWidth="110" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox spacing="16" alignment="CENTER_RIGHT">
+            <padding><Insets top="8" right="12" bottom="8" left="8"/></padding>
+            <Label fx:id="totalLabel" text="Total: $0" />
+        </HBox>
+    </bottom>
+</BorderPane>
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cafeuniv.ppi.controller.LoginClienteController">
+    <center>
+        <VBox alignment="CENTER" spacing="12.0">
+            <padding>
+                <Insets top="24" right="24" bottom="24" left="24" />
+            </padding>
+
+            <!-- Logo JazzCoffee -->
+            <ImageView fitHeight="100" preserveRatio="true" smooth="true">
+                <image>
+                    <Image url="file:/C:/Users/esteb/Desktop/trabajos2semestre/PPI/DOCUMENTACION%20PPI/LOGO%20.jpg" />
+                </image>
+            </ImageView>
+
+            <Label text="JazzCoffee" style="-fx-font-size: 18px; -fx-font-weight: bold;" />
+            <Label text="Inicio de Sesión - Cliente" style="-fx-font-size: 14px;" />
+            <TextField fx:id="emailField" promptText="Email" prefWidth="250" />
+            <PasswordField fx:id="passwordField" promptText="Contraseña" prefWidth="250" />
+            <Button fx:id="loginButton" text="Ingresar" onAction="#onLogin" maxWidth="Infinity" prefWidth="250" />
+            <Hyperlink text="¿Olvidaste tu contraseña?" onAction="#onForgot" />
+            <Button text="Crear cuenta" onAction="#onCreateAccount" prefWidth="250" />
+            <Button text="Volver" onAction="#onVolver" style="-fx-background-color: transparent;" />
+            <Label fx:id="errorLabel" textFill="red" />
+        </VBox>
+    </center>
+</BorderPane>
+
