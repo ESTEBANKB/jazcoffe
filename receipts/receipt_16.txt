@@ -1,0 +1,16 @@
+==== CAFE UNIV - RECIBO ====
+Venta #16  2025-11-20 17:56
+Pago: efectivo
+-----------------------------
+Café Americano x1  $5000,00
+Capuchino x1  $7000,00
+chao x1  $400,00
+cocacola x1  $3000,00
+panchocha x1  $3500,00
+Sandwich x1  $9000,00
+-----------------------------
+Subtotal: $27900,00
+Descuento: -$0,00
+TOTAL: $27900,00
+Estado: confirmada
+=============================

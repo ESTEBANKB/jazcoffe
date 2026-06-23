@@ -1,0 +1,11 @@
+==== CAFE UNIV - RECIBO ====
+Venta #9  2025-11-13 09:07
+Pago: efectivo
+-----------------------------
+Capuchino x1  $7000,00
+-----------------------------
+Subtotal: $7000,00
+Descuento: -$0,00
+TOTAL: $7000,00
+Estado: confirmada
+=============================

@@ -1,0 +1,13 @@
+==== CAFE UNIV - RECIBO ====
+Venta #7  2025-11-13 08:52
+Pago: efectivo
+-----------------------------
+Café Americano x5  $25000,00
+cocacola x5  $15000,00
+panchocha x10  $35000,00
+-----------------------------
+Subtotal: $75000,00
+Descuento: -$5000,00
+TOTAL: $70000,00
+Estado: confirmada
+=============================

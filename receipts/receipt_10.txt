@@ -1,0 +1,11 @@
+==== CAFE UNIV - RECIBO ====
+Venta #10  2025-11-13 09:09
+Pago: efectivo
+-----------------------------
+cocacola x2  $6000,00
+-----------------------------
+Subtotal: $6000,00
+Descuento: -$0,00
+TOTAL: $6000,00
+Estado: confirmada
+=============================

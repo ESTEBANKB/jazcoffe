@@ -1,0 +1,13 @@
+==== CAFE UNIV - RECIBO ====
+Venta #2  2025-10-28 00:12
+Pago: efectivo
+-----------------------------
+Capuchino x1  $7000,00
+cocacola x3  $9000,00
+Sandwich x1  $9000,00
+-----------------------------
+Subtotal: $25000,00
+Descuento: -$0,00
+TOTAL: $25000,00
+Estado: confirmada
+=============================

@@ -1,0 +1,12 @@
+==== CAFE UNIV - RECIBO ====
+Venta #12  2025-11-13 09:11
+Pago: efectivo
+-----------------------------
+Café Americano x1  $5000,00
+Café Americano x199  $995000,00
+-----------------------------
+Subtotal: $1000000,00
+Descuento: -$0,00
+TOTAL: $1000000,00
+Estado: confirmada
+=============================
