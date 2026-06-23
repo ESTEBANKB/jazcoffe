@@ -1,0 +1,14 @@
+========================================
+RESUMEN DE RENDIMIENTO - JazzCoffee POS
+========================================
+Fecha: 2026-06-23 15:12:52
+Muestras capturadas: 3
+
+PROMEDIOS:
+----------
+CPU: 100,00 %
+Memoria RAM: 29,24 MB
+Disco Lectura: 0,0000 MB/s
+Disco Escritura: 0,0000 MB/s
+
+Archivo completo: rendimiento_report.csv
