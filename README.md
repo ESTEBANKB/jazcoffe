@@ -28,7 +28,7 @@ JazzCoffee POS - Sistema de Punto de Venta
 ### 6. Dashboard y Ventas en Tiempo Real
 ![Ventas en Tiempo Real](pantallazos%20interfaz/ventas_tiempo_real.png)
 
-JazzCoffee es una aplicación de escritorio robusta diseñada para centralizar y optimizar la operación comercial, el inventario y las ventas de una cafetería universitaria. Desarrollada bajo el patrón arquitectónico **MVC (Modelo-Vista-Controlador)**, la plataforma resuelve problemas críticos como las largas filas de espera y los desfaces manuales de stock[cite: 1, 2, 3, 4].
+JazzCoffee es una aplicación de escritorio robusta diseñada para centralizar y optimizar la operación comercial, el inventario y las ventas de una cafetería universitaria. Desarrollada bajo el patrón arquitectónico **MVC (Modelo-Vista-Controlador)**, la plataforma resuelve problemas críticos como las largas filas de espera y los desfaces manuales de stock.
 
 ---
 
@@ -37,8 +37,8 @@ JazzCoffee es una aplicación de escritorio robusta diseñada para centralizar y
 * **Punto de Venta (POS Ágil):** Registro rápido de transacciones, cálculo automático de subtotales, impuestos y gestión de múltiples métodos de pago (simulados).
 * **Control de Inventario Riguroso:** Monitoreo en tiempo real de existencias con alertas automáticas de stock mínimo y trazabilidad de movimientos.
 * **Venta Inteligente y Fidelización:** Sugerencia predictiva de combos y asignación de puntos de fidelidad para la comunidad estudiantil.
-* **Seguridad por Roles:** Autenticación protegida con hashing de contraseñas mediante **BCrypt** y restricción de vistas según el perfil[cite: 2, 3].
-* **Dashboard Analítico:** Panel visual con métricas de ingresos y gráficos de rendimiento en tiempo real[cite: 1, 3].
+* **Seguridad por Roles:** Autenticación protegida con hashing de contraseñas mediante **BCrypt** y restricción de vistas según el perfil.
+* **Dashboard Analítico:** Panel visual con métricas de ingresos y gráficos de rendimiento en tiempo real.
 * **Sostenibilidad:** Facturación digital interactiva con exportación nativa a PDF mediante **OpenPDF**, reduciendo el uso de papel térmico en un 95%.
 
 ---
@@ -56,11 +56,11 @@ JazzCoffee es una aplicación de escritorio robusta diseñada para centralizar y
 
 ## 📐 Arquitectura del Sistema
 
-El proyecto implementa una arquitectura **multi-capas** para asegurar la mantenibilidad y escalabilidad del código[cite: 2, 3]:
+El proyecto implementa una arquitectura **multi-capas** para asegurar la mantenibilidad y escalabilidad del código:
 
-* `com.cafeuniv.ppi.model`: Entidades de datos mapeadas con Hibernate[cite: 2].
-* `com.cafeuniv.ppi.view`: Archivos FXML descriptivos de la interfaz gráfica[cite: 2, 3].
-* `com.cafeuniv.ppi.controller`: Lógica de control que gestiona los eventos de la UI[cite: 2, 3].
+* `com.cafeuniv.ppi.model`: Entidades de datos mapeadas con Hibernate.
+* `com.cafeuniv.ppi.view`: Archivos FXML descriptivos de la interfaz gráfica.
+* `com.cafeuniv.ppi.controller`: Lógica de control que gestiona los eventos de la UI.
 * `com.cafeuniv.ppi.service`: Capa de negocio donde se gestiona la atomicidad de las transacciones (ACID).
 
 ---
