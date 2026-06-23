@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.cafeuniv.ppi.controller.ProductosController">
+    <top>
+        <HBox spacing="8" alignment="CENTER_LEFT">
+            <padding><Insets top="8" right="8" bottom="8" left="8"/></padding>
+            <TextField fx:id="nombreField" promptText="Nombre" />
+            <ComboBox fx:id="categoriaCombo" promptText="Categoría" />
+            <TextField fx:id="precioField" promptText="Precio" />
+            <TextField fx:id="costoField" promptText="Costo" />
+            <TextField fx:id="stockActualField" promptText="Stock" />
+            <TextField fx:id="stockMinField" promptText="Stock mínimo" />
+            <Button text="Guardar" onAction="#onGuardar" />
+            <Button text="Editar" onAction="#onEditar" />
+        </HBox>
+    </top>
+    <center>
+        <TableView fx:id="tabla" prefHeight="400">
+            <columns>
+                <TableColumn text="ID" prefWidth="60" />
+                <TableColumn text="Nombre" prefWidth="180" />
+                <TableColumn text="Categoría" prefWidth="120" />
+                <TableColumn text="Precio" prefWidth="90" />
+                <TableColumn text="Stock" prefWidth="80" />
+            </columns>
+        </TableView>
+    </center>
+    <bottom>
+        <HBox spacing="8" alignment="CENTER_LEFT">
+            <padding><Insets top="8" right="8" bottom="8" left="8"/></padding>
+            <Button text="Eliminar" onAction="#onEliminar" />
+        </HBox>
+    </bottom>
+</BorderPane>
+
+
