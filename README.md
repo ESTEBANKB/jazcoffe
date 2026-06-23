@@ -8,10 +8,25 @@ JazzCoffee POS - Sistema de Punto de Venta
 ![Hibernate](https://img.shields.io/badge/Hibernate-ORM-yellow?style=for-the-badge)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-blue?style=for-the-badge&logo=postgresql)
 
-capturas de pantalla 
+## 📸 Capturas de Pantalla de la Interfaz
 
-1.### Módulo de Caja / Punto de Venta
-![Módulo de Caja](screenshots/caja.png)
+### 1. Control de Acceso (Login)
+![Login](pantallazos%20interfaz/login.png)
+
+### 2. Módulo de Caja y Ventas
+![Módulo de Caja](pantallazos%20interfaz/caja.png)
+
+### 3. Control de Inventario
+![Inventario](pantallazos%20interfaz/inventario.png)
+
+### 4. Gestión de Productos
+![Productos](pantallazos%20interfaz/productos.png)
+
+### 5. Administración de Categorías
+![Categorías](pantallazos%20interfaz/categorias.png)
+
+### 6. Dashboard y Ventas en Tiempo Real
+![Ventas en Tiempo Real](pantallazos%20interfaz/ventas_tiempo_real.png)
 
 JazzCoffee es una aplicación de escritorio robusta diseñada para centralizar y optimizar la operación comercial, el inventario y las ventas de una cafetería universitaria. Desarrollada bajo el patrón arquitectónico **MVC (Modelo-Vista-Controlador)**, la plataforma resuelve problemas críticos como las largas filas de espera y los desfaces manuales de stock[cite: 1, 2, 3, 4].
 
